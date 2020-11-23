@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/js" href="js/jQuery.js"> -->
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+<h1>Premier text</h1>
+
+    <p id="paraph">salut</p>
+    <p id="paraph1">On test ensemble le jQuery !</p>
+    <br>
+    <textarea name="contenu" cols="70" rows="10" id="monTextarea">
+    </textarea>
+    <br />
+    <button id="bouton">click</button>
+    <script>
+        $("#bouton").click(function(){
+            $("#monTextarea").css({border : '2px solid red'});                        
+            $("#paraph").css({border : '2px solid red'});
+            $("#paraph1").css({border : '2px solid red'});   
+            $('h1').appendTo( $('p') ); 
+        });
+    </script>
+<!--- ------------------------------>
+
+<h2>Exercice 3</h2>
+<div class="container1">Boite 1</div>
+<div class="container2">Boite 2</div>
+<div class="container3">Boite 3</div>
+<div class="container4">Boite 4</div>
+
+<script>
+    $("div").click(function(){
+        $(".container1").css({backgroundColor: 'red'});
+        $(".container2").css({backgroundColor: 'orange'});
+        $(".container3").css({backgroundColor: 'blue'});
+        $(".container4").css({backgroundColor: 'pink'});
+});
+
+
+</script>
+</body>
+</html>
